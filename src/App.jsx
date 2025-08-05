@@ -1,5 +1,9 @@
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
 
 function App() {
   return (
@@ -7,7 +11,11 @@ function App() {
       <Header />
 
       <main className="container py-5">
-        <h1 className="text-center"> Welcome to Flight Booker</h1>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+        </Routes>
       </main>
 
       <Footer />

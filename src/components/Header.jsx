@@ -5,6 +5,7 @@ function Header() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary px-4">
       <Link className="navbar-brand fw-bold" to="/">
+        <i class="bi bi-airplane-fill mx-1"></i>
         FlightBooker
       </Link>
       <button
@@ -28,7 +29,16 @@ function Header() {
               Book Flight
             </Link>
           </li>
-          
+          <li className="nav-item">
+            <Link className="nav-link" to="/login">
+              Login
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/signup">
+              Sign Up
+            </Link>
+          </li>
         </ul>
 
         <form className="d-flex" role="search">

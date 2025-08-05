@@ -7,6 +7,20 @@
   color: #ffc107;
 }
 
+.auth-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: #f8f9fa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form label {
+  font-weight: 500;
+}
+
+
 /* Footer styles */
 footer {
   font-size: 0.9rem;
