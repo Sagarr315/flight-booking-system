@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 function Header() {
@@ -18,7 +17,7 @@ function Header() {
       </button>
 
       <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
           <li className="nav-item">
             <Link className="nav-link" to="/">
               Home
@@ -40,17 +39,6 @@ function Header() {
             </Link>
           </li>
         </ul>
-
-        <form className="d-flex" role="search">
-          <input
-            className="form-control me-2"
-            type="search"
-            placeholder="Search Flights"
-          />
-          <button className="btn btn-light" type="submit">
-            <i className="bi bi-search"></i>
-          </button>
-        </form>
       </div>
     </nav>
   );

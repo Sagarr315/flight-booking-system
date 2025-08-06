@@ -5,7 +5,7 @@ function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="hero-section text-white d-flex align-items-center">
+      <section className="hero-section text-white d-flex align-items-center m-5">
         <div className="container text-center">
           <h1 className="display-4 fw-bold">Book Your Dream Flight Today</h1>
           <p className="lead">Hassle-free booking, low fares & quick service</p>

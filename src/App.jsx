@@ -4,17 +4,19 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
     <>
       <Header />
 
-      <main className="container py-5">
+      <main className="flex-grow-1">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </main>
 
