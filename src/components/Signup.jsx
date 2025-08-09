@@ -1,6 +1,8 @@
+import {Link} from "react-router-dom"; 
+
 function Signup() {
   return (
-    <div className="auth-container">
+    <div className="auth-container ">
       <h2 className="text-center mb-4">Sign Up</h2>
       <form className="auth-form">
         <div className="mb-3">
@@ -61,6 +63,9 @@ function Signup() {
         <button type="submit" className="btn btn-success w-100">
           Sign Up
         </button>
+        <p className="text-center mt-3">
+          Already have an account? <Link to="/login">Login</Link>
+        </p>
       </form>
     </div>
   );

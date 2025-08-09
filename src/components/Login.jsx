@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Login() {
   return (
     <div className="auth-container">
@@ -18,10 +20,14 @@ function Login() {
             className="form-control"
             placeholder="Enter password"
           />
+          <p className="m-1"><Link>Forget Password ?</Link></p>
         </div>
         <button type="submit" className="btn btn-primary w-100">
           Login
         </button>
+        <p className="m-1">
+          Not registered?<Link to="/signup">Sign up</Link>
+        </p>
       </form>
     </div>
   );
