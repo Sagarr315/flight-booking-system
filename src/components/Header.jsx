@@ -4,7 +4,7 @@ function Header() {
   return (
     <nav className="nav navbar navbar-expand-lg navbar-dark px-4">
       <Link className="navbar-brand fw-bold text-dark" to="/">
-        <i class="bi bi-airplane-fill mx-1"></i>
+        <i className="bi bi-airplane-fill mx-1"></i>
         FlightBooker
       </Link>
       <button

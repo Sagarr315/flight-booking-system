@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function Signup() {
   const [formData, setFormData] = useState({
@@ -13,6 +13,8 @@ function Signup() {
     age: "",
     contactNumber: "",
   });
+  
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setFormData((prev) => ({
@@ -21,7 +23,7 @@ function Signup() {
     }));
   };
 
-  const navigate = useNavigate();
+  
   navigate("/login");
 
   const handleSubmit = async (e) => {
@@ -39,7 +41,7 @@ function Signup() {
           },
         }
       );
-      toast.success("Login successful");
+      toast.success("SignUp successful");
       navigate("/login");
     } catch (error) {
       toast.error("Sign Up Failed");
